@@ -10,6 +10,7 @@ export interface FlightOption {
   provider: string;
   priceEstimate?: string;
   duration?: string;
+  airline?: string; // Novo campo
   stops?: string;
   deepLink: string;
   logoUrl: string;
@@ -22,4 +23,8 @@ export interface RouteInsight {
   tips: string[];
   bestTimeToFly?: string;
   airlines?: string[];
+  // Novos campos retornados pela IA
+  cheapestPrice?: string;
+  fastestDuration?: string;
+  mainAirline?: string;
 }
